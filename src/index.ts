@@ -39,8 +39,13 @@ async function main () {
       page.waitForNavigation({ waitUntil: 'domcontentloaded' })
     ])
 
+    console.debug('🧙 Getting all movements for the current year')
+
     const allMov = await getAllMovementsForYear(new Date().getFullYear())
     fs.writeFileSync('./output.json', JSON.stringify(allMov))
+
+    console.debug('🧙 All done!')
+    await browser.close()
   } catch (err) {
     await throwErrorWithScreenshot(err)
   }

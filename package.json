@@ -1,7 +1,7 @@
 {
   "name": "node-triodos-bank",
   "version": "1.0.0",
-  "description": "",
+  "description": "Script to scrap triodos bank's spanish website",
   "main": "index.js",
   "scripts": {
     "dev": "NODE_ENV=development nodemon src/index.ts",
@@ -12,9 +12,12 @@
     "type": "git",
     "url": "git+https://github.com/NiciusB/node-triodos-bank.git"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
+  "keywords": [
+    "triodos",
+    "triodos-bank"
+  ],
+  "author": "NiciusB",
+  "license": "MIT",
   "bugs": {
     "url": "https://github.com/NiciusB/node-triodos-bank/issues"
   },
@@ -28,13 +31,13 @@
     "eslint-plugin-node": "^11.1.0",
     "eslint-plugin-promise": "^4.2.1",
     "eslint-plugin-standard": "^4.0.1",
-    "nodemon": "^2.0.4",
-    "ts-node": "^8.10.2",
-    "typescript": "^3.9.3"
+    "nodemon": "^2.0.4"
   },
   "dependencies": {
     "@types/puppeteer": "^3.0.0",
     "dotenv": "^8.2.0",
-    "puppeteer": "^3.2.0"
+    "puppeteer": "^3.2.0",
+    "ts-node": "^8.10.2",
+    "typescript": "^3.9.3"
   }
 }
