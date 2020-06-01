@@ -1,0 +1,5 @@
+node_modules
+error-*.jpg
+.env
+puppeteer_tmp
+output.json
